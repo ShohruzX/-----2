@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Калькулятор</h2>
+      <div>
+        <label>
+          a =
+          <input type="number" name="X" />
+        </label>
+      </div>
+      <div>
+        <label>
+          b =
+          <input type="number" name="Y" />
+        </label>
+      </div>
+      <div class="operators">
+        <button onclick="sum()">+</button>
+        <button onclick="min()">-</button>
+        <button onclick="mult()">*</button>
+        <button onclick="divide()">/</button>
+      </div>
+      <span id="calcResult">РЕЗУЛЬТАТ:</span>
+    </div>
+
+    <div class="coursePrice">
+      <h1>Калькулятор стоимости курса</h1>
+      <label>
+        Курс:
+        <select id="courseName">
+          <option value="Python">Python</option>
+          <option value="Frontend">Frontend</option>
+          <option value="UX">UX/UI</option>
+        </select>
+      </label>
+      <label>
+        Цена:
+        <input type="text" id="coursePrice" readonly>
+      </label>
+      
+      <label>
+        Скидка:
+        <input id="step" type="range" value="0" oninput="saleStep()" min="0" max="50" step="5">
+      </label>
+      <span id="sale"></span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

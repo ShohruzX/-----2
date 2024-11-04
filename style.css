@@ -1,0 +1,11 @@
+.coursePrice{
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+.coursePrice label{
+    display: block;
+    margin-bottom: 10px;
+}
